@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nelith</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1.5rem;
+    }
+    .view {
+      max-width: 50rem;
+      text-align: left;
+      display: none;
+    }
+    body.show-typed { background: #E600E6; }
+    body.show-typed .view.handwriting { display: none; }
+    body.show-typed .view.typed { display: block; }
+    body:not(.show-typed) .view.handwriting { display: block; }
+    body:not(.show-typed) .view.typed { display: none; }
+
+    .handwriting .text {
+      font-family: "YourHandwriting", cursive;
+      font-size: clamp(1rem, 4vw, 1.5rem);
+      color: #E600E6;
+    }
+    .typed .text {
+      font-family: "Gill Sans MT", "Gill Sans", sans-serif;
+      font-size: clamp(1rem, 4vw, 1.5rem);
+      color: #000;
+    }
+    .text p { margin-bottom: 0.5em; }
+    .text .blank { height: 1em; margin-bottom: 0; }
+
+    .click-here {
+      cursor: pointer;
+      text-decoration: underline;
+      color: #fff;
+    }
+    .handwriting .click-here { font-family: "Gill Sans MT", "Gill Sans", sans-serif; }
+    .typed .click-here { font-family: "YourHandwriting", cursive; }
+    .click-here:hover { opacity: 0.85; }
+
+    .bottom-links { margin-top: 1.5em; }
+    .bottom-links a {
+      display: block;
+      text-decoration: underline;
+      color: inherit;
+      margin-bottom: 0.25em;
+    }
+    .bottom-links a:hover { opacity: 0.85; }
+  </style>
+</head>
+<body>
+  <div class="view handwriting">
+    <div class="text">
+      <p><span class="click-here" onclick="document.body.classList.add('show-typed')">CLICK HERE IF YOU CAN'T READ MY HANDWRITING</span></p>
+      <p class="blank"></p>
+      <p>MY NAME IS NELITH</p>
+      <p class="blank"></p>
+      <p>I'VE LOVED BUILDING BUSINESSES SINCE I WAS 13</p>
+      <p class="blank"></p>
+      <p>NOW I'M BUILDING CHAOTIC SYSTEMS</p>
+      <p>WE ARE BRINGING AI INTO THE PHYSICAL WORLD</p>
+      <p class="blank"></p>
+      <p>IN 3OO3 I WAS BORN IN CROYDON IN SOUTH LONDON</p>
+      <p>BUT I GREW UP IN DUNFERMLINE IN SCOTLAND</p>
+      <p>I AM ORIGINALLY FROM SRI LANKA</p>
+      <p>AND I MOVED TO LONDON IN 3O3O FOR UNIVERSITY</p>
+      <p class="blank"></p>
+      <p>WHILST STUDYING AT UCL I COFOUNDED THE GRADUATE GUIDE WHICH WAS ACQUIRED BY APPRENTIFY</p>
+      <p class="blank"></p>
+      <p>AFTER THIS I JOINED OTIO (RAG FOR KNOWLEDGE WORKERS) AS THEIR 3ND HIRE</p>
+      <p class="blank"></p>
+      <p>I LOVE:</p>
+      <p>ELECTRONIC MUSIC</p>
+      <p>CHELSEA FOOTBALL CLUB</p>
+      <p>LONG DISTANCE RUNNING</p>
+      <p>MUAY THAI</p>
+      <p>READING ABOUT CHINA</p>
+      <p class="blank"></p>
+      <div class="bottom-links">
+        <a href="mailto:nelith.bandularatne+personalsite@gmail.com">EMAIL</a>
+        <a href="https://x.com/nelithb" target="_blank" rel="noopener">TWITTER</a>
+        <a href="https://open.spotify.com/user/bandulnd?si=7fe8ab082c0a4fd5" target="_blank" rel="noopener">SPOTIFY</a>
+        <a href="https://letterboxd.com/nelithb/" target="_blank" rel="noopener">LETTERBOXD</a>
+        <a href="https://www.strava.com/athletes/53883658" target="_blank" rel="noopener">STRAVA</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="view typed">
+    <div class="text">
+      <p><span class="click-here" onclick="document.body.classList.remove('show-typed')">CLICK HERE IF YOU CAN READ MY HANDWRITING</span></p>
+      <p class="blank"></p>
+      <p>MY NAME IS NELITH</p>
+      <p class="blank"></p>
+      <p>I'VE LOVED BUILDING BUSINESSES SINCE I WAS 12</p>
+      <p class="blank"></p>
+      <p>NOW I'M BUILDING CHAOTIC SYSTEMS</p>
+      <p>WE ARE BRINGING AI INTO THE PHYSICAL WORLD</p>
+      <p class="blank"></p>
+      <p>IN 2002 I WAS BORN IN CROYDON IN SOUTH LONDON</p>
+      <p>BUT I GREW UP IN DUNFERMLINE IN SCOTLAND</p>
+      <p>I AM ORIGINALLY FROM SRI LANKA</p>
+      <p>AND I MOVED TO LONDON IN 2020 FOR UNIVERSITY</p>
+      <p class="blank"></p>
+      <p>WHILST STUDYING AT UCL I COFOUNDED THE GRADUATE GUIDE WHICH WAS ACQUIRED BY APPRENTIFY</p>
+      <p class="blank"></p>
+      <p>AFTER THIS I JOINED OTIO (RAG FOR KNOWLEDGE WORKERS) AS THEIR 2ND HIRE</p>
+      <p class="blank"></p>
+      <p>I LOVE:</p>
+      <p>ELECTRONIC MUSIC</p>
+      <p>CHELSEA FOOTBALL CLUB</p>
+      <p>LONG DISTANCE RUNNING</p>
+      <p>MUAY THAI</p>
+      <p>READING ABOUT CHINA</p>
+      <p class="blank"></p>
+      <div class="bottom-links">
+        <a href="mailto:nelith.bandularatne+personalsite@gmail.com">EMAIL</a>
+        <a href="https://x.com/nelithb" target="_blank" rel="noopener">TWITTER</a>
+        <a href="https://open.spotify.com/user/bandulnd?si=7fe8ab082c0a4fd5" target="_blank" rel="noopener">SPOTIFY</a>
+        <a href="https://letterboxd.com/nelithb/" target="_blank" rel="noopener">LETTERBOXD</a>
+        <a href="https://www.strava.com/athletes/53883658" target="_blank" rel="noopener">STRAVA</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
